@@ -10,15 +10,15 @@ public class Teste {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        try (Scanner scan = new Scanner(System.in)) {
+            System.out.println("Digite um número inteiro");
+            Integer valor = scan.nextInt();
 
-        System.out.println("Digite um número inteiro");
-        Integer valor = scan.nextInt();
-
-        if (valor >= 0) {
-            System.out.println("O número é: " + valor);
-        } else {
-            System.out.println("O módulo de " + valor + " é: " + valor * -1);
+            if (valor >= 0) {
+                System.out.println("O número é: " + valor);
+            } else {
+                System.out.println("O módulo de " + valor + " é: " + valor * -1);
+            }
         }
 
     }

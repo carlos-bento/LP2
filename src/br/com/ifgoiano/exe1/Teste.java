@@ -10,16 +10,16 @@ public class Teste {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            Double estoqueMedio, quantidadeMinima, quantidadeMaxima;
 
-        Double estoqueMedio, quantidadeMinima, quantidadeMaxima;
+            System.out.println("Digite a quantidade mínima: ");
+            quantidadeMinima = scanner.nextDouble();
+            System.out.println("Digite a quantidade máxima: ");
+            quantidadeMaxima = scanner.nextDouble();
 
-        System.out.println("Digite a quantidade mínima: ");
-        quantidadeMinima = scanner.nextDouble();
-        System.out.println("Digite a quantidade máxima: ");
-        quantidadeMaxima = scanner.nextDouble();
-
-        estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2;
-        System.out.println("O estoque médio é de: R$" + estoqueMedio);
+            estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2;
+            System.out.println("O estoque médio é de: R$" + estoqueMedio);
+        }
     }
 }
