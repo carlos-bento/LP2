@@ -7,44 +7,37 @@ public class Teste {
 
     public static void main(String[] args) {
 
-        try (Scanner scan = new Scanner(System.in)) {
-            ArrayList<Integer> numeros = new ArrayList<Integer>();
-            for (int i = 0; i < 3; i++) {
-                System.out.println("Insira o valor " + (i + 1));
-                numeros.add(scan.nextInt());
-            }
+        int a, b, c;
+        Scanner recebe = new Scanner(System.in);
+        boolean Igual = false, NaoIgual = false, Maior = false, Menor = false, MaiorOuIgual = false, MenorOuIgual = false;
+        System.out.println("Verificador de relacionamentos");
 
-            try {
-                for (int i = 0; i < numeros.size(); i++) {
-                    if (numeros.get(i).equals(numeros.lastIndexOf(i))) {
-                        System.out.println(
-                                "Os números " + numeros.get(i) + " e " + numeros.lastIndexOf(i) + " são iguais");
-                    } else {
-                        System.out.println(
-                                "Os números " + numeros.get(i) + " e " + numeros.lastIndexOf(i) + " são diferentes");
-                    }
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        System.out.println("Digite um valor: ");
+        a = recebe.nextInt();
 
-        // Integer n1;
-        // Integer n2;
-        // Integer n3;
-        //
-        // System.out.println("Digite o 1ª valor: ");
-        // n1 = scan.nextInt();
-        // System.out.println("Digite o 2ª valor: ");
-        // n2 = scan.nextInt();
-        // System.out.println("Digite o 3ª valor: ");
-        // n3 = scan.nextInt();
-        //
-        // for (int i = 0; i < 2; i++) {
-        // if (n1 == n2){
-        // System.out.println("1ª e o 2ª são iguais");
-        // }
-        // }
+        System.out.println("Digite um valor: ");
+        b = recebe.nextInt();
+
+        System.out.println("Digite um valor: ");
+        c = recebe.nextInt();
+
+        if (a == b) Igual = true;
+        if (a == c) Igual = true;
+        if (b == c) Igual = true;
+        if (a != b) NaoIgual = true;
+        if (a != c) NaoIgual = true;
+        if (b != c) NaoIgual = true;
+        if (a > b) Maior = true;
+        if (a > c) Maior = true;
+        if (b > c) Maior = true;
+        if (a < b) Menor = true;
+        if (a < c) Menor = true;
+        if (b < c) Menor = true;
+
+        System.out.println("Igual = " + Igual);
+        System.out.println("NaoIgual = " + NaoIgual);
+        System.out.println("Maior = " + Maior);
+        System.out.println("Menor = " + Menor);
 
     }
-};
+}
