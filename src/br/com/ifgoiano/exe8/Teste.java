@@ -2,9 +2,9 @@ package br.com.ifgoiano.exe8;
 
 import java.util.Scanner;
 
-// 8. Faça um programa para imprimir a tabuada de um número digitado pelo usuário.
-
 public class Teste {
+
+    // 8. Faça um programa para imprimir a tabuada de um número digitado pelo usuário.
 
     public static void main(String[] args) {
 

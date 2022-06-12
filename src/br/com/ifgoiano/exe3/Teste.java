@@ -2,72 +2,61 @@ package br.com.ifgoiano.exe3;
 
 import java.util.Scanner;
 
-// 3. Escrever um programa que leia três números inteiros e mostre todos os relacionamentos de ordem 
-// existentes entre eles. Os relacionamentos possíveis  são: Igual, Não igual, Maior, Menor, Maior ou igual, 
-// Menor ou igual.
-
 public class Teste {
+
+    // 3. Escrever um programa que leia três números inteiros e mostre todos os relacionamentos de ordem
+    // existentes entre eles. Os relacionamentos possíveis  são: Igual, Não igual, Maior, Menor, Maior ou igual,
+    // Menor ou igual.
 
     public static void main(String[] args) {
 
-        try (Scanner recebe = new Scanner(System.in)) {
-            int[] numeros = new int[3];
+        Scanner ler = new Scanner(System.in);
+        int a, b, c;
 
-            int igualValor = 0;
-            int naoigualValor = 0;
-            int maiorValor = 0;
-            int menorValor = 0;
-            int maiorouigualValor = 0;
-            int menorouigualValor = 0;
+        System.out.printf("Informe o primeiro valor: ");
+        a = ler.nextInt();
 
-            int checar = 0; // iniciando a variavel
+        System.out.printf("Informe o segundo valor.: ");
+        b = ler.nextInt();
 
-            System.out.println("Verificador de relacionamentos");
+        System.out.printf("Informe o terceiro valor.: ");
+        c = ler.nextInt();
 
-            for (int i = 0; i < 3; i++) {
-                System.out.println("Informe o " + (i + 1) + " valor: ");
-                numeros[i] = recebe.nextInt();
-            }
 
-            igualValor = numeros[0];
-            naoigualValor = numeros[0];
-            menorValor = numeros[0];
-            maiorValor = numeros[0];
-            maiorouigualValor = numeros[0];
-            menorouigualValor = numeros[0];
+        if(a==b){
+            System.out.printf("%d igual %d\n", a, b);
+        }
+        else if(a>b){
+            System.out.printf("%d Nao igual %d\n", a, b);
+            System.out.printf("%d maior que %d\n", a, b);
+        }
+        else{
+            System.out.printf("%d Nao igual %d\n", a, b);
+            System.out.printf("%d menor que %d\n", a, b);
+        }
 
-            for (int i = 0; i < numeros.length; i++) {
+        if(b==c){
+            System.out.printf("%d igual %d\n", b, c);
+        }
+        else if(b>c){
+            System.out.printf("%d Nao igual %d\n", b, c);
+            System.out.printf("%d maior que %d\n", b, c);
+        }
+        else{
+            System.out.printf("%d Nao igual %d\n", b, c);
+            System.out.printf("%d menor que %d\n", b, c);
+        }
 
-                checar += numeros[i];
-
-                if (igualValor == numeros[i])
-                    igualValor = numeros[i];
-
-                if (naoigualValor != numeros[i])
-                    naoigualValor = numeros[i];
-
-                if (menorValor > numeros[i])
-                    menorValor = numeros[i];
-
-                if (maiorValor < numeros[i])
-                    maiorValor = numeros[i];
-
-                if (maiorouigualValor <= numeros[i])
-                    maiorouigualValor = numeros[i];
-
-                if (menorouigualValor >= numeros[i])
-                    menorouigualValor = numeros[i];
-            }
-
-            System.out.println("");
-            System.out.println("Menor valor: " + menorValor);
-            System.out.println("Maior valor: " + maiorValor);
-            System.out.println("");
-            System.out.println("Valor maior ou igual aos outros: " + maiorouigualValor);
-            System.out.println("Valor menor ou igual aos outros: " + menorouigualValor);
-            System.out.println("");
-            System.out.println("Valores que sao iguais: " + igualValor);
-            System.out.println("Valores que nao sao iguais: " + naoigualValor);
+        if(a==c){
+            System.out.printf("%d igual %d\n", a, c);
+        }
+        else if(a>c){
+            System.out.printf("%d Nao igual %d\n", a, c);
+            System.out.printf("%d maior que %d\n", a, c);
+        }
+        else{
+            System.out.printf("%d Nao igual %d\n", a, c);
+            System.out.printf("%d menor que %d\n", a, c);
         }
 
     }

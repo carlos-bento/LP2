@@ -2,7 +2,10 @@ package br.com.ifgoiano.exe17;
 
 import java.util.Scanner;
 
-public class exe17 {
+public class Teste {
+
+    //17. Leia 2 vetores de inteiros V1 e V2 de N componentes cada (no máximo 50). Determine e imprima quantas
+    //vezes que V1 e V2 possuem valores idênticos nas mesmas posições.
 
     public static void main(String[] args) {
         int contador = 0;
