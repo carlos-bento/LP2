@@ -11,26 +11,26 @@ import java.util.Scanner;
 public class Teste {
 
   public static void main(String args[]) {
-    Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
+      int quantidadeNumeros;
+      Double resultado = 1.0;
 
-    int quantidadeNumeros;
-    Double resultado = 1.0;
+      System.out.print("Digite a quantidade de numeros a serem processados: ");
+      quantidadeNumeros = scanner.nextInt();
+      Double[] numeros = new Double[quantidadeNumeros];
 
-    System.out.print("Digite a quantidade de numeros a serem processados: ");
-    quantidadeNumeros = scanner.nextInt();
-    Double[] numeros = new Double[quantidadeNumeros];
-
-    for (int x = 0; x < numeros.length; x++) {
-      System.out.print("Digite um numero: ");
-      numeros[x] = scanner.nextDouble();
-    }
-
-    for (int x = 0; x < numeros.length; x++) {
-      for (Double y = numeros[x]; y > 0; y--) {
-        resultado = y * resultado;
+      for (int x = 0; x < numeros.length; x++) {
+        System.out.print("Digite um numero: ");
+        numeros[x] = scanner.nextDouble();
       }
-      System.out.println("O fatorial de " + numeros[x] + " e: " + resultado);
-      System.out.printf("O fatorial de %.0f eh igual a %.2f %n", numeros[x], resultado);
+
+      for (int x = 0; x < numeros.length; x++) {
+        for (Double y = numeros[x]; y > 0; y--) {
+          resultado = y * resultado;
+        }
+        System.out.println("O fatorial de " + numeros[x] + " e: " + resultado);
+        System.out.printf("O fatorial de %.0f eh igual a %.2f %n", numeros[x], resultado);
+      }
     }
 
   }

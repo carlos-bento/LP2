@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class Teste {
 
-    // 6. Escrever um programa declarando três variáveis do tipo inteiro (a, b e c). Ler um valor maior
-    // que zero para cada variável (se o valor digitado não é válido, mostrar mensagem e ler novamente).
-    // Exibe o menor lido multiplicado pelo maior e o maior valor dividido pelo menor.
+    // 6. Escrever um programa declarando três variáveis do tipo inteiro (a, b e c).
+    // Ler um valor maior
+    // que zero para cada variável (se o valor digitado não é válido, mostrar
+    // mensagem e ler novamente).
+    // Exibe o menor lido multiplicado pelo maior e o maior valor dividido pelo
+    // menor.
 
     public static void main(String[] args) {
         try (Scanner receber = new Scanner(System.in)) {
