@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Teste {
 
     // 1. Faça um programa para calcular o estoque médio de uma peça, sendo que:
-    // 𝑒𝑠𝑡𝑜𝑞𝑢𝑒𝑀𝑒𝑑𝑖𝑜 = (𝑞𝑢𝑎𝑛𝑡𝑖𝑑𝑎𝑑𝑒𝑀𝑖𝑛𝑖𝑚𝑎 +
-    // 𝑞𝑢𝑎𝑛𝑡𝑖𝑑𝑎𝑑𝑒𝑀𝑎𝑥𝑖𝑚𝑎)/2. Receba as quantidades via teclado.
+    // 𝑒𝑠𝑡𝑜𝑞𝑢𝑒𝑀𝑒𝑑𝑖𝑜 = (𝑞𝑢𝑎𝑛𝑡𝑖𝑑𝑎𝑑𝑒𝑀𝑖𝑛𝑖𝑚𝑎 + 𝑞𝑢𝑎𝑛𝑡𝑖𝑑𝑎𝑑𝑒𝑀𝑎𝑥𝑖𝑚𝑎)/2. Receba as quantidades via teclado.
 
     public static void main(String[] args) {
 

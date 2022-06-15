@@ -2,13 +2,13 @@ package br.com.ifgoiano.exe2;
 
 import java.util.Scanner;
 
-// 2. Faça um programa que:
-// ●   Leia a cotação do dólar
-// ●   Leia um valor em dólares 
-// ●   Converta esse valor para Real 
-// ●   Mostre o resultado
-
 public class Teste {
+
+    // 2. Faça um programa que:
+    // ●   Leia a cotação do dólar
+    // ●   Leia um valor em dólares
+    // ●   Converta esse valor para Real
+    // ●   Mostre o resultado
 
     public static void main(String[] args) {
 
