@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Teste {
 
     public static void main(String[] args) {
-        ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+        ArrayList<Pessoa> pessoas = new ArrayList<>();
         Aluno aluno = new Aluno();
         Professor professor = new Professor();
         Professor professor2 = new Professor();
@@ -36,11 +36,11 @@ public class Teste {
     }
 
     public static void contaPessoas(ArrayList<Pessoa> p){
-        for (int i = 0; i < p.size (); i++) {
-            if (p.get(i) instanceof Aluno) {
-                System.out.printf("A pessoa %s é Aluno\n", p.get(i).getNome());
-            } else if (p.get(i) instanceof Professor) {
-                System.out.printf("A pessoa %s é Professor\n", p.get ( i ).getNome ());
+        for (Pessoa pessoa : p) {
+            if (pessoa instanceof Aluno) {
+                System.out.printf ( "A pessoa %s é Aluno\n", pessoa.getNome ( ) );
+            } else if (pessoa instanceof Professor) {
+                System.out.printf ( "A pessoa %s é Professor\n", pessoa.getNome ( ) );
             }
         }
     }
