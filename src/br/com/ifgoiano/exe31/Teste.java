@@ -19,7 +19,7 @@ public class Teste {
 
       do {
         System.out.println(
-            "Escolha uma das opcoes:\n\t1: Cadastrar caneta\n\t2: Exibir todas as canetas\n\t3: Exibir quantidade de canetas cadastradas\n\t4: Consultar quantidade de canetas de uma determinada cor (digitada pelo usuário)\n\t0: Sair");
+            "Escolha uma das opcoes:\n\t1: Cadastrar caneta\n\t2: Exibir todas as canetas\n\t3: Exibir quantidade de canetas cadastradas\n\t4: Consultar quantidade de canetas de uma determinada cor (digitada pelo usuário)\n\t0: Encerrar programa");
         opcoes = Integer.parseInt(scanner.nextLine());
 
         switch (opcoes) {
