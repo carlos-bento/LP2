@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class exe29 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println ( "Digite um valor decimal inteiro para converter ao equivalente em binário" );
-        int num = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Digite um valor decimal inteiro para converter ao equivalente em binário");
+            int num = sc.nextInt();
 
-        convertBinario ( num );
+            convertBinario(num);
+        }
     }
 
     public static void convertBinario(int num) {
