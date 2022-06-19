@@ -38,17 +38,35 @@ public class Data {
         return ano;
     }
 
-
     public boolean isValidarData(int dia, int mes, int ano) {
-        if (dia > 31 || dia < 1) {
-            return false;
+
+        if ((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)) {
+            if ((dia < 01) || (dia > 31)) {
+                return false;
+            }
+        } else
+
+        if ((mes == 4) || (mes == 6) || (mes == 9) || (mes == 11)) {
+            if ((dia < 01) || (dia > 30)) {
+                return false;
+            }
+        } else
+
+        if ((mes == 02)) {
+            if ((ano % 4 == 0) && ((ano % 100 != 0) || (ano % 400 == 0))) {
+                if ((dia < 01) || (dia > 29)) {
+                    return false;
+                }
+            } else {
+                if ((dia < 01) || (dia > 28)) {
+                    return false;
+                }
+            }
         }
-        if (mes > 12 || mes < 1) {
+        if ((mes > 12))
             return false;
-        }
+
         return true;
-        /*bissexto = (ano % 4 == 0) && (ano % 100 != 0 || ano % 400 == 0)
-        não entendi como é a verificação do ano bissexto nesse metodo*/
     }
 
     public String toString() {
