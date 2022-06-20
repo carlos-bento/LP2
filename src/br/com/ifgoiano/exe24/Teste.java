@@ -20,7 +20,7 @@ public class Teste {
 
             CalcHipotenusa hip = new CalcHipotenusa();
             hip.setCalcHipotenusa(catAdj, catOpo);
-            System.out.printf("A Hipotenusa e %f:", hip.getCalcHipotenusa());
+            System.out.printf("A Hipotenusa e %.2f:", hip.getCalcHipotenusa());
         }
     }
 }
