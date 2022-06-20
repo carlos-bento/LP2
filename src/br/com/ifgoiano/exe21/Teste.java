@@ -13,7 +13,7 @@ public class Teste {
 
         try (Scanner ler = new Scanner(System.in)) {
             int Tam;
-            int media = 0;
+            Double media = .0;
             int maior = -1;
 
             System.out.printf("Digite a quantidade de numeros que deseja digitar:\n");
@@ -33,7 +33,7 @@ public class Teste {
                 media = media + vet[i];
             }
 
-            System.out.printf("Media e igual a : %d e o maior e %d\n", media / Tam, maior);
+            System.out.printf("Media e igual a : %.2f e o maior e %d\n", (media / Tam), maior);
         }
 
     }
